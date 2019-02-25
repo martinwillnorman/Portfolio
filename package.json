@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/martinwillnorman/Portfolio.git",
+  "author": "William Martin",
+  "license": "MIT"
+}
