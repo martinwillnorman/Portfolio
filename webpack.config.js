@@ -12,11 +12,11 @@ module.exports = {
   entry: {
     main: "./src/scripts/index.js"
   },
-  devtool: "inline-source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[hash].js"
   },
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -81,7 +81,7 @@ module.exports = {
       filename: "index.html"
     }),
     new WebpackMd5Hash(),
-    new CopyWebpackPlugin([{ from: "src/static", to: "static" }]),
+    // new CopyWebpackPlugin([{ from: "src/static", to: "static" }]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       pngquant: {
